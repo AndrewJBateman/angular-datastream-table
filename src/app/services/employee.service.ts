@@ -1,10 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { IEmployee } from '../interfaces/iemployee';
 import { map, mapTo } from 'rxjs/operators';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/mapTo';
+
+import { IEmployee } from '../interfaces/iemployee';
 import { PusherService } from './pusher.service';
 
 @Injectable({
@@ -19,7 +18,7 @@ export class EmployeeService {
   }
 
   // function to return channel
-  getChannel() {
+  getChannel () {
     return this._channel;
   }
 

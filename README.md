@@ -21,7 +21,7 @@ The pusher channel uses a publish/subscribe model so all subscribers to the chan
 
 ## Screenshots
 
-![Example screenshot](./img/main-screen.png)
+![Example screenshot](./img/frontend-and-server.png)
 
 ## Technologies
 
@@ -31,7 +31,9 @@ The pusher channel uses a publish/subscribe model so all subscribers to the chan
 
 ## Setup
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
+
+Run `node server.js` to run the server backend. Navigate to `http://localhost:2000/`.
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
@@ -65,15 +67,19 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Features
 
-* real-time datastream.
+* Forms created using [Angular's reactive forms](https://angular.io/api/forms/ReactiveFormsModule).
 
-* Bootstrap 4 utility/helper classes used.
+* Utility/helper classes used from [Bootstrap 4](https://getbootstrap.com/).
+
+* real-time data and functionality using [Pusher event-based API 'Pusher Channel'](https://pusher.com/).
+
+* working local server backend.
 
 ## Status & To-Do List
 
-* Status: Project is incomplete. Main screen shows but will not add data.
+* Status: UI adds employees to the list but the delete function does not work.
 
-* To-Do: Complete app and customise it.
+* To-Do: Complete app to have working delete function. Look at employee edit function. Customise app.
 
 ## Inspiration
 

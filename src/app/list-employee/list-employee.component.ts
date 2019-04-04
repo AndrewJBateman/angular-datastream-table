@@ -22,6 +22,16 @@ export class ListEmployeeComponent implements OnInit {
         this.loading = false;
         this.employees = employees;
       });
+
+    // subscribe to pusher's event
+    this._employeeService.getChannel().bind('new', data => {
+      data.new = true;
+      this.employees.push(data);
+    });
+
+    this._employeeService.getChannel().bind('deleted', data => {
+      this.employees = this.employees.filter(emp => emp.id !== data.id);
+    });
   }
 
   delete(employee: IEmployee) {

@@ -6,9 +6,7 @@ import { map, mapTo } from 'rxjs/operators';
 import { IEmployee } from '../interfaces/iemployee';
 import { PusherService } from './pusher.service';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class EmployeeService {
   private _endPoint = 'http://localhost:2000/employee';
   private _channel: any;

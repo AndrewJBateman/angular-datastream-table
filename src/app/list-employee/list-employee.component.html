@@ -1,4 +1,6 @@
+
 <h6 class="pb-2 mb-0">Employees</h6>
+
 <table class="table">
   <thead>
     <tr>
@@ -19,6 +21,9 @@
       <td>{{ employee.salary }}</td>
       <td>{{ employee.createdAt | date: 'yyy/MM/dd' }}</td>
       <td>
+        <button class="btn btn-primary btn-sm">
+          <span class="oi oi-pencil"></span>
+        </button>
         <button click="delete(employee)" class="btn btn-danger btn-sm">
           <span class="oi oi-trash"></span>
         </button>

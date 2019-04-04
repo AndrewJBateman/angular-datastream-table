@@ -1,3 +1,5 @@
+<!-- Template to create employee using Angular reactive form -->
+
 <!-- heading with padding bottom = 2 and margin bottom = 0 -->
 <h6 class="pb-2 mb-0"></h6>
 
@@ -20,5 +22,5 @@
     <input formControlName="salary" type="text" class="form-control" id="salary" placeholder="Enter salary">
       <small *ngIf="employeeForm.get('salary').hasError('required')" class="form-text text-danger">Salary is required</small>
   </div>
-  <button type="submit" [disabled]="loader || employeeForm.invalid" class="btn btn-primary">{{ loader?'Adding':'Add' }}</button>
+  <button type="submit" [disabled]="loader || employeeForm.invalid" class="btn btn-primary">{{loader?'Adding':'Add'}}</button>
 </form>

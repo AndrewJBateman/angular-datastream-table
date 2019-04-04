@@ -15,7 +15,7 @@ export class PusherService {
   constructor() {
     this._pusher = new Pusher(api_key, {
       cluster: cluster,
-      encrypted: true
+      forceTLS: true
     });
   }
 

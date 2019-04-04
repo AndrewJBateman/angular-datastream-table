@@ -1,3 +1,6 @@
+// FormGroup tracks the value and validity state of a group of FormControl instances.
+// It aggregates the values of each child FormControl into one object, with each control name as the key
+
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
 import { EmployeeService } from '../services/employee.service';

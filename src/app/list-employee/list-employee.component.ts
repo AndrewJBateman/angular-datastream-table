@@ -37,7 +37,7 @@ export class ListEmployeeComponent implements OnInit {
   delete(employee: IEmployee) {
     // show delete confirmation with ngAlert
     this._ngAlert.push({
-      message: `<strong>Are you sure!</strong> you want to delete this employee with name <strong>${employee.name}</strong>`,
+      message: `<strong>Are you sure</strong> you want to delete employee <strong>${employee.name}</strong>`,
       type: MessageType.warning,
       buttons: [
         {
@@ -50,7 +50,7 @@ export class ListEmployeeComponent implements OnInit {
       ]
     });
   }
-
+  // remove employee from list using the filter function
   private _actualDelete (employee: IEmployee) {
     this._employeeService.delete(employee)
     .subscribe(() => {

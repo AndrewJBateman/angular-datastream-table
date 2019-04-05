@@ -17,7 +17,15 @@ App with realtime communication between app and server using a [Pusher](https://
 
 ## General info
 
-The pusher channel uses a publish/subscribe model so all subscribers to the channel will receive the update. See [Pusher documentation](https://pusher.com/docs) for more information.
+* The pusher channel uses a publish/subscribe model so all subscribers to the channel will receive the update. See [Pusher documentation](https://pusher.com/docs) for more information.
+
+* The server.js file follows the [Twelve-Factor](https://12factor.net/) methodology for building software-as-a-service apps that:
+
+'_Use declarative formats for setup automation, to minimize time and cost for new developers joining the project;
+Have a clean contract with the underlying operating system, offering maximum portability between execution environments;
+Are suitable for deployment on modern cloud platforms, obviating the need for servers and systems administration;
+Minimize divergence between development and production, enabling continuous deployment for maximum agility;
+And can scale up without significant changes to tooling, architecture, or development practices._'
 
 ## Screenshots
 
@@ -77,9 +85,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Status & To-Do List
 
-* Status: UI adds employees to the list but the delete function does not work.
+* Status: UI adds employees to the list without refreshing the browser (note: browser for server (port 2000) does have to be refreshed to show the changes).
 
-* To-Do: Complete app to have working delete function. Look at employee edit function. Customise app.
+* To-Do: Look at employee edit function. Customise app and add functionality. Consider currency pull-down menu for salary input.
 
 ## Inspiration
 

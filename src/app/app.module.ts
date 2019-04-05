@@ -10,12 +10,14 @@ import { PusherService } from './services/pusher.service';
 import { EmployeeService } from './services/employee.service';
 import { ListEmployeeComponent } from './list-employee/list-employee.component';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
+import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListEmployeeComponent,
-    CreateEmployeeComponent
+    CreateEmployeeComponent,
+    EditEmployeeComponent
   ],
   imports: [
     BrowserModule,

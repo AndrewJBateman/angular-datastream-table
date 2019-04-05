@@ -10,6 +10,7 @@ import { Subscription } from 'rxjs';
 export class AppComponent implements OnInit, OnDestroy {
   message: IMessage;
   closeTypes = CloseType;
+  messageTypes = MessageType;
   private _alertSub: Subscription;
 
   constructor(private _ngAlert: NgAlertService) { }

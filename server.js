@@ -1,3 +1,5 @@
+// This server simulates an actual DB and routes to create, delete and get employees from a mock DB array object.
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const Pusher = require('pusher');

@@ -33,9 +33,11 @@ And can scale up without significant changes to tooling, architecture, or develo
 
 ## Technologies
 
-* generated with [Angular CLI v7.0.6](https://github.com/angular/angular-cli).
+* [Angular CLI v7.2.14](https://github.com/angular/angular-cli).
 
-* Real-time communication scalable features added with [Pusher](https://pusher.com/)
+* [rxjs v6.5.1](http://reactivex.io/) observable streams for asynschronous programming.
+
+* [Pusher-js v4.4.0](https://pusher.com/) Real-time communication scalable features.
 
 ## Setup
 
@@ -44,10 +46,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 Run `node server.js` to run the server backend. Navigate to `http://localhost:2000/`.
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Code Examples
 
@@ -83,9 +81,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 * working local server backend.
 
+* Updated to latest Angular version. Dependencies updated and all errors and dependency conflicts resolved (except [finalhandler minor vulnerability](https://npmjs.com/advisories/836) which has no fix).
+
 ## Status & To-Do List
 
-* Status: UI adds employees to the list without refreshing the browser (note: browser for server (port 2000) does have to be refreshed to show the changes).
+* Status: Working front and backend. UI adds employees to the list without refreshing the browser (note: browser for server (port 2000) does have to be refreshed to show the changes).
 
 * To-Do: Look at employee edit function. Customise app and add functionality. Consider currency pull-down menu for salary input.
 

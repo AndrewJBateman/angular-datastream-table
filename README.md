@@ -33,11 +33,19 @@ And can scale up without significant changes to tooling, architecture, or develo
 
 ## Technologies
 
-* [Angular CLI v7.2.14](https://github.com/angular/angular-cli).
+* [Angular v8.0.0](https://angular.io/)
+
+* [Angular CLI v8.0.1](https://github.com/angular/angular-cli).
+
+* [Angular HttpClient v7.2.15](https://angular.io/guide/http) simplified client HTTP API that rests on the XMLHttpRequest interface exposed by browsers.
 
 * [rxjs v6.5.1](http://reactivex.io/) observable streams for asynschronous programming.
 
 * [Pusher-js v4.4.0](https://pusher.com/) Real-time communication scalable features.
+
+* [Bootstrap v4.3.1](https://getbootstrap.com/). Links added to `angular.json "styles"`
+
+* [ngAlert v2.1.0](https://github.com/theo4u/ngAlert) alert component with different types of alert. Link added to `angular.json "styles"`.
 
 ## Setup
 
@@ -81,13 +89,15 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 * working local server backend.
 
-* Updated to latest Angular version. Dependencies updated and all errors and dependency conflicts resolved (except [finalhandler minor vulnerability](https://npmjs.com/advisories/836) which has no fix).
+* Data access services delegated to separate service components.
+
+* Updated to latest Angular version 8. Dependencies updated and all errors and dependency conflicts resolved.
 
 ## Status & To-Do List
 
-* Status: Working front and backend. UI adds employees to the list without refreshing the browser (note: browser for server (port 2000) does have to be refreshed to show the changes).
+* Status: Working front and backend. UI adds employees to the list without refreshing the browser (note: browser for server (port 2000) does have to be refreshed to show the changes). Employees can be added & deleted successfully but the edit component is not coded so not possible to edit employee records.
 
-* To-Do: Look at employee edit function. Customise app and add functionality. Consider currency pull-down menu for salary input.
+* To-Do: Look at employee edit function. Customise app and add functionality. Consider currency pull-down menu for salary input. Fix server.js to remove error message: `TypeError: pusher.trigger is not a function`.
 
 ## Inspiration
 

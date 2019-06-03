@@ -2,7 +2,7 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
-const Pusher = require('pusher');
+const Pusher = require('pusher-js');
 const cors = require('cors');
 const dotenv = require('dotenv').config();
 const shortId = require('shortid');

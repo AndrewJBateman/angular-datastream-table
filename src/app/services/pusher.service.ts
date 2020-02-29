@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import * as Pusher from 'pusher-js';
+import Pusher from 'pusher-js';
 
 import {environment} from '../../environments/environment';
 

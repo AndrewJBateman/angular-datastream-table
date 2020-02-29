@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  API_KEY: 'b8e7110cf4c920065ae0',
-  CLUSTER: 'eu',
+  API_KEY: '',
+  CLUSTER: '',
 };
 
 /*

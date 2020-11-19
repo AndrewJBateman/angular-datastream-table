@@ -35,7 +35,7 @@ And can scale up without significant changes to tooling, architecture, or develo
 
 ## :signal_strength: Technologies
 
-* [Angular v10](https://angular.io/)
+* [Angular v11](https://angular.io/)
 * [rxjs v6](http://reactivex.io/) observable streams for asynschronous programming.
 * [Pusher-js v7](https://pusher.com/) Real-time communication scalable features.
 * [Bootstrap v4](https://getbootstrap.com/). Links added to `angular.json "styles"`

@@ -1,10 +1,10 @@
 // This server simulates an actual DB and routes to create, delete and get employees from a mock DB array object.
-
 const express = require("express");
 const bodyParser = require("body-parser");
 const Pusher = require("pusher-js");
 const cors = require("cors");
-const dotenv = require("dotenv").config();
+const dotenv = require("dotenv");
+dotenv.config();
 const shortId = require("shortid");
 let mocks = require("./mocks");
 
@@ -18,10 +18,11 @@ const pusher = new Pusher({
   key: process.env.PUSHER_KEY,
   secret: process.env.PUSHER_SECRET,
   cluster: process.env.PUSHER_CLUSTER,
-  forceTLS: true,
+  useTLS: true,
 });
+Pusher.logToConsole = true;
 
-console.log(pusher.PUSHER_APPID);
+console.log("connected to Pusher cluster", pusher.key.cluster);
 
 app.post("/employee", (req, res) => {
   // simulate actual db save with id (using shortId) and createdAt added

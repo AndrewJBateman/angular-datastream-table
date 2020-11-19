@@ -1,6 +1,6 @@
 # :zap: Angular Datastream Table
 
-App with realtime communication between app and server using a [Pusher](https://pusher.com/) channel for notifications/updates etc.
+* App with realtime communication between app and server using a [Pusher](https://pusher.com/) channel for notifications/updates etc.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -21,7 +21,6 @@ App with realtime communication between app and server using a [Pusher](https://
 ## :books: General info
 
 * The pusher channel uses a publish/subscribe model so all subscribers to the channel will receive the update. See [Pusher documentation](https://pusher.com/docs) for more information.
-
 * The server.js file follows the [Twelve-Factor](https://12factor.net/) methodology for building software-as-a-service apps that:
 
 '_Use declarative formats for setup automation, to minimize time and cost for new developers joining the project;
@@ -38,18 +37,19 @@ And can scale up without significant changes to tooling, architecture, or develo
 
 * [Angular v10](https://angular.io/)
 * [rxjs v6](http://reactivex.io/) observable streams for asynschronous programming.
-* [Pusher-js v6](https://pusher.com/) Real-time communication scalable features.
+* [Pusher-js v7](https://pusher.com/) Real-time communication scalable features.
 * [Bootstrap v4](https://getbootstrap.com/). Links added to `angular.json "styles"`
 * [NgAlert v2](https://github.com/theo4u/ngAlert) alert component with different types of alert. Link added to `angular.json "styles"`.
 
 ## :floppy_disk: Setup
 
 * Install dependencies using `npm i`
-* Get your own API key and Cluster name from [Pusher-js v5.1.1](https://pusher.com/)
+* Get your own API key and Cluster name from [Pusher-js v5.1.1](https://pusher.com/) Sandbox Plan
 * Add Pusher API Key etc. to .env file
-* Add API_KEY & CLUSTER values to environment.ts
-* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
-* Run `node server.js` to run the server backend. Navigate to `http://localhost:2000/`.
+* Add API_KEY & CLUSTER values to `environment.ts` & `environment.prod.ts`
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`
+* Open a second command terminal
+* Run `nodemon server.js` to run the server backend. Navigate to `http://localhost:2000/`. Restarts with changes
 * Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## :computer: Code Examples
@@ -83,7 +83,7 @@ And can scale up without significant changes to tooling, architecture, or develo
 * real-time data and functionality using [Pusher event-based API 'Pusher Channel'](https://pusher.com/).
 * working local server backend.
 * Data access services delegated to separate service components.
-* Updated to latest Angular version 8. Dependencies updated and all errors and dependency conflicts resolved.
+* Updated to latest Angular v11. Dependencies updated and all errors and dependency conflicts resolved.
 
 ## :clipboard: Status & To-Do List
 
@@ -92,7 +92,7 @@ And can scale up without significant changes to tooling, architecture, or develo
 
 ## :clap: Inspiration
 
-[Christian Nwamba's tutorial: BUILD A REALTIME TABLE WITH ANGULAR](https://pusher.com/tutorials/realtime-table-angular),
+* [Christian Nwamba's tutorial: BUILD A REALTIME TABLE WITH ANGULAR](https://pusher.com/tutorials/realtime-table-angular),
 
 ## :envelope: Contact
 

@@ -1,5 +1,4 @@
 <div class="container">
-
   <!-- alert class created  -->
   <!-- Note: ngAlert closeType is used to determine which type of close button should be place on it.
   It only accepts CloseType enum. Defaults to CloseType.TIMES
@@ -7,7 +6,11 @@
   NORMAL -> the close button is beneath the alert message
   TIMES -> the close button is by the far right with an 'x'-->
   <div class="app-level-alert">
-    <ng-alert [(message)]="message" [dismissable]="true" [closeType]="closeTypes.TIMES"></ng-alert>
+    <ng-alert
+      [(message)]="message"
+      [dismissable]="true"
+      [closeType]="closeTypes.TIMES"
+    ></ng-alert>
   </div>
 
   <div class="row">
@@ -22,6 +25,4 @@
       </div>
     </div>
   </div>
-
 </div>
-
